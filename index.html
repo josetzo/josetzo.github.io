@@ -4,28 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Ochoa | Ingeniero Informático</title>
-  <style>
-    body{font-family:Arial;margin:0;background:#f6f8fb;color:#1f2937}
-    .wrap{max-width:900px;margin:60px auto;padding:24px}
-    .card{background:#fff;padding:24px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-    a{color:#2563eb;text-decoration:none}
-    ul{line-height:1.8}
-  </style>
+  <meta name="description" content="Portafolio profesional de José Ochoa: integración de sistemas, desarrollo backend, APIs y automatización." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>José Ochoa</h1>
-      <p>Ingeniero Civil en Informática y Telecomunicaciones</p>
-      <h2>Proyectos</h2>
-      <ul>
-        <li><a href="#">Integraciones HealthConnect</a></li>
-        <li><a href="#">Automatizaciones ObjectScript</a></li>
-        <li><a href="#">APIs y Middleware</a></li>
-      </ul>
-      <h2>Contacto</h2>
-      <p>Email: tu-correo@dominio.com</p>
-    </div>
-  </div>
+  <!-- Fondo decorativo -->
+  <div class="bg-shape bg-blue"></div>
+  <div class="bg-shape bg-red"></div>
+  <div class="bg-shape bg-cream"></div>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a href="#" class="logo">JO<span>//</span></a>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#stack">Stack</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="themeBtn" class="btn-ghost" aria-label="Cambiar tema">Tema</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left card">
+        <p class="tag">INGENIERO CIVIL EN INFORMÁTICA Y TELECOMUNICACIONES</p>
+        <h1>José Ochoa</h1>
+        <p class="lead">
+          Construyo integraciones robustas, APIs y automatizaciones para sistemas clínicos y empresariales.
+          Enfocado en rendimiento, trazabilidad y mantenibilidad.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-secondary" href="mailto:jochoac@uft.edu">Contactar</a>
+        </div>
+
+        <ul class="quick-data">
+          <li><strong>Correo:</strong> jochoac@uft.edu</li>
+          <li><strong>Base:</strong> Chile</li>
+          <li><strong>Intereses:</strong> Integración, Backend, Arquitectura</li>
+        </ul>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card graffiti-card">
+          <p class="mini-title">ESTILO</p>
+          <h2>Blueprint creativo,<br>ejecución técnica.</h2>
+          <p>
+            Diseño visual con identidad fuerte + ingeniería clara.
+          </p>
+          <div class="chips">
+            <span>#APIs</span>
+            <span>#Interoperabilidad</span>
+            <span>#ObjectScript</span>
+            <span>#Automation</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="sobre" class="section card">
+      <h3>Sobre mí</h3>
+      <p>
+        Perfil orientado a resolver problemas complejos de integración entre plataformas.
+        Trabajo con enfoque práctico: medir, simplificar y escalar.
+      </p>
+      <div class="timeline">
+        <article>
+          <h4>Integración de sistemas</h4>
+          <p>Diseño y soporte de flujos de datos entre sistemas críticos.</p>
+        </article>
+        <article>
+          <h4>Backend y APIs</h4>
+          <p>Construcción de servicios confiables con manejo de errores y trazas.</p>
+        </article>
+        <article>
+          <h4>Optimización</h4>
+          <p>Mejora de tiempos de respuesta y reducción de fricción operativa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <h3>Stack técnico</h3>
+      <div class="grid-4">
+        <article class="card stack">
+          <h4>Lenguajes</h4>
+          <ul>
+            <li>ObjectScript</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </article>
+        <article class="card stack">
+          <h4>Integración</h4>
+          <ul>
+            <li>HealthConnect / InterSystems</li>
+            <li>SOAP / REST</li>
+            <li>HL7</li>
+            <li>Transformaciones de mensaje</li>
+          </ul>
+        </article>
+        <article class="card stack">
+          <h4>DevOps</h4>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Linux</li>
+            <li>Logs y troubleshooting</li>
+            <li>Despliegues controlados</li>
+          </ul>
+        </article>
+        <article class="card stack">
+          <h4>Soft skills</h4>
+          <ul>
+            <li>Comunicación técnica</li>
+            <li>Análisis crítico</li>
+            <li>Trabajo transversal</li>
+            <li>Documentación clara</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <h3>Proyectos destacados</h3>
+      <div class="projects">
+        <article class="card project">
+          <p class="project-kicker">INTEGRACIÓN</p>
+          <h4>Conectividad entre sistemas clínicos</h4>
+          <p>Diseño de flujos para intercambio de información con validaciones y trazabilidad end-to-end.</p>
+          <a href="#" aria-label="Agregar enlace del proyecto">Agregar enlace</a>
+        </article>
+
+        <article class="card project">
+          <p class="project-kicker">AUTOMATIZACIÓN</p>
+          <h4>Normalización de datos de contacto</h4>
+          <p>Reglas de transformación para mejorar consistencia y consumo aguas abajo.</p>
+          <a href="#" aria-label="Agregar enlace del proyecto">Agregar enlace</a>
+        </article>
+
+        <article class="card project">
+          <p class="project-kicker">PERFORMANCE</p>
+          <h4>Optimización de consultas e intercambio</h4>
+          <p>Reducción de latencia en procesos de consulta y sincronización de episodios.</p>
+          <a href="#" aria-label="Agregar enlace del proyecto">Agregar enlace</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section card likes">
+      <h3>Gustos & enfoque personal</h3>
+      <p>
+        Me interesa el cruce entre ingeniería y estética: interfaces limpias, identidad visual fuerte y código mantenible.
+      </p>
+      <div class="chips">
+        <span>Arte urbano</span>
+        <span>Diseño editorial</span>
+        <span>Música alternativa</span>
+        <span>Arquitectura de software</span>
+      </div>
+    </section>
+
+    <section id="contacto" class="section card contact">
+      <h3>Contacto y redes</h3>
+      <p>Puedes escribirme o conectar por estas plataformas:</p>
+      <div class="socials">
+        <a href="mailto:jochoac@uft.edu">Email</a>
+        <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <a href="https://www.instagram.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <small>Reemplaza los links “TU-USUARIO” por tus URLs reales.</small>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> José Ochoa — Portafolio profesional</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
